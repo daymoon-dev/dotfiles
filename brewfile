@@ -1,0 +1,28 @@
+# Taps
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+
+# 설치 경로
+cask_args dppdir: "/Applications"
+
+# Binaries/Libraries
+brew 'zsh'
+brew 'git'
+brew 'node'
+brew 'mackup'
+
+# Applications
+cask 'iterm2'
+cask 'google-chrome'
+cask 'karabiner-elements'
+cask 'popclip'
+cask 'notion'
+cask 'slack'
+cask 'visual-studio-code'
+cask 'vlc'
+cask 'microsoft-teams'
+cask 'dropbox'
+cask 'alfred'
+
+# Font
+cask 'font-fira-code'
