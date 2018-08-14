@@ -15,13 +15,11 @@ brew 'mackup'
 cask 'iterm2'
 cask 'google-chrome'
 cask 'karabiner-elements'
-cask 'popclip'
 cask 'notion'
 cask 'slack'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'microsoft-teams'
-cask 'dropbox'
 cask 'alfred'
 
 # Font
