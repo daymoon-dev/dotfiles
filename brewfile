@@ -3,7 +3,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
 # 설치 경로
-cask_args dppdir: "/Applications"
+cask_args appdir: "/Applications"
 
 # Binaries/Libraries
 brew 'zsh'
