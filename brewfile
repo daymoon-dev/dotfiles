@@ -9,6 +9,7 @@ cask_args appdir: "/Applications"
 brew 'zsh'
 brew 'git'
 brew 'node'
+brew 'yarn'
 brew 'mackup'
 
 # Applications
@@ -21,6 +22,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'microsoft-teams'
 cask 'alfred'
+cask 'sketch'
 
 # Font
 cask 'font-fira-code'
