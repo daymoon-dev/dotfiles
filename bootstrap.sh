@@ -25,3 +25,15 @@ chsh -s $(which zsh)
 
 # Oh-my-zsh 설치
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+# zsh syntax highlighting 플러그인 설치
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+cp .zshrc ~/
+
+# node 설치
+brew install node
+
+# yarn 설치
+brew install yarn --without-node
