@@ -32,8 +32,5 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 
 cp .zshrc ~/
 
-# node 설치
-brew install node
-
 # yarn 설치
 brew install yarn --without-node
