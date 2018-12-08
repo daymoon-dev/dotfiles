@@ -9,13 +9,10 @@ cask_args appdir: "/Applications"
 brew 'zsh'
 brew 'git'
 brew 'node'
-brew 'yarn'
 brew 'mackup'
 
 # Applications
 cask 'iterm2'
-cask 'google-chrome'
-cask 'karabiner-elements'
 cask 'notion'
 cask 'slack'
 cask 'visual-studio-code'
@@ -23,6 +20,8 @@ cask 'vlc'
 cask 'microsoft-teams'
 cask 'alfred'
 cask 'sketch'
+cask 'google-chrome'
+cask 'karabiner-elements'
 
 # Font
 cask 'font-fira-code'

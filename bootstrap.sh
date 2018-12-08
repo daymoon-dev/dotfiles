@@ -1,9 +1,3 @@
-# Command Line Tool 설치
-xcode-select --install
-
-# 콘솔에서 라이선스 동의하기
-sudo xcodebuild -license
-
 # Set temporary variable
 DOTFILES=$HOME/dotfiles
 
@@ -18,7 +12,6 @@ brew Update
 brew tap homebrew/bundle
 brew bundle --file=$DOTFILES/Brewfile # Install binary & applications
 brew cleanup
-brew cask cleanup
 
 # SHELL 기본을 ZSH로
 chsh -s $(which zsh)
@@ -29,8 +22,22 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 # zsh syntax highlighting 플러그인 설치
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-cp .zshrc ~/
+yes | cp $DOTFILES/.zshrc $HOME
+
+# git 설정
+git config --global user.name "icn.daymoon"
+git config --global user.email "icn.daymoon@gmail.com"
 
 # yarn 설치
-brew install yarn --without-node
+npm install http-server yarn --global --save
+
+source $HOME/.zshrc
+
+#-------------------------------------------------------------------------------
+# Set OS X preferences
+# We will run this last because this will reload the shell
+#-------------------------------------------------------------------------------
+
+source $DOTFILES/.osx
