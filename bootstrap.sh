@@ -17,7 +17,7 @@ brew cleanup
 chsh -s $(which zsh)
 
 # Oh-my-zsh 설치
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # zsh syntax highlighting 플러그인 설치
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
