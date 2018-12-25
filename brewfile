@@ -8,7 +8,7 @@ cask_args appdir: "/Applications"
 # Binaries/Libraries
 brew 'zsh'
 brew 'git'
-brew 'node'
+brew 'node@10'
 brew 'mackup'
 
 # Applications
