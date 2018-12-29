@@ -13,6 +13,8 @@ brew tap homebrew/bundle
 brew bundle --file=$DOTFILES/Brewfile # Install binary & applications
 brew cleanup
 
+yes | cp $DOTFILES/.zshrc $HOME
+
 # SHELL 기본을 ZSH로
 chsh -s $(which zsh)
 
@@ -24,16 +26,20 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-yes | cp $DOTFILES/.zshrc $HOME
-
 # git 설정
 git config --global user.name "icn.daymoon"
 git config --global user.email "icn.daymoon@gmail.com"
 
+# node 설치
+### 1. nvm
+sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+source $HOME/.zshrc
+
+### 2. node
+nvm install node --lts
+
 # yarn 설치
 npm install http-server yarn --global --save
-
-source $HOME/.zshrc
 
 #-------------------------------------------------------------------------------
 # Set OS X preferences
