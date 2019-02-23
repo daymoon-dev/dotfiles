@@ -100,4 +100,5 @@ source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 prompt_context() {
 }
-source /Users/daymoon/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
