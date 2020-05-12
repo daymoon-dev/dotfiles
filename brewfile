@@ -1,6 +1,6 @@
 # Taps
-tap 'homebrew/cask-cask'
-tap 'homebrew/cask-fonts'
+tap 'homebrew/homebrew-cask'
+tap 'homebrew/homebrew-cask-fonts'
 
 # 설치 경로
 cask_args appdir: "/Applications"

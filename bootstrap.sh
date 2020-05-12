@@ -15,16 +15,12 @@ brew cleanup
 
 yes | cp $DOTFILES/.zshrc $HOME
 
-# SHELL 기본을 ZSH로
-chsh -s $(which zsh)
-
 # Oh-my-zsh 설치
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # zsh syntax highlighting 플러그인 설치
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # git 설정
 git config --global user.name "icn.daymoon"
@@ -37,9 +33,6 @@ source $HOME/.zshrc
 
 ### 2. node
 nvm install node --lts
-
-# yarn 설치
-npm install http-server yarn --global --save
 
 #-------------------------------------------------------------------------------
 # Set OS X preferences
