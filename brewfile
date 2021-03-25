@@ -7,18 +7,19 @@ cask_args appdir: "/Applications"
 
 # Binaries/Libraries
 brew 'zsh'
-brew 'git'
+#brew 'git'
 brew 'mackup'
 
 # Applications
 cask 'iterm2'
 cask 'notion'
-cask 'slack'
+#cask 'slack'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'alfred'
 cask 'google-chrome'
 cask 'karabiner-elements'
+cask 'firefox'
 
 # Font
 cask 'font-fira-code'

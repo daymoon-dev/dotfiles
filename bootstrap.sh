@@ -2,9 +2,9 @@
 DOTFILES=$HOME/dotfiles
 
 # Homebrew 설치 확인, 설치되어 있지 않은 경우 설치 진행
-if test ~ $(which brew); then
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+#if test ~ $(which brew); then
+#ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#fi
 
 # Homebrew Update
 brew Update
@@ -20,7 +20,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # zsh syntax highlighting 플러그인 설치
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # git 설정
 git config --global user.name "icn.daymoon"
@@ -32,7 +32,7 @@ sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.s
 source $HOME/.zshrc
 
 ### 2. node
-nvm install node --lts
+nvm i --lts
 
 #-------------------------------------------------------------------------------
 # Set OS X preferences
