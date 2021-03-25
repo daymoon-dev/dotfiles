@@ -20,7 +20,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # zsh syntax highlighting 플러그인 설치
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc
 
 # git 설정
 git config --global user.name "icn.daymoon"

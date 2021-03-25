@@ -20,6 +20,7 @@ cask 'alfred'
 cask 'google-chrome'
 cask 'karabiner-elements'
 cask 'firefox'
+cask 'figma'
 
 # Font
 cask 'font-fira-code'
