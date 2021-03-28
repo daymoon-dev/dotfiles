@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "69cb2485533bfed440e4ab2895aa7743045e5611"
+        "revision": "a2aeb3e3a2a9f3c6a53cc13d27b1e624d99e1c43"
       },
       "homebrew/cask-fonts": {
-        "revision": "679d31659dd122931da13e9e3379f5780d4e250d"
+        "revision": "0c6440de95677eecadfe6a66517c18a7d13967ca"
       }
     },
     "brew": {
@@ -179,6 +179,15 @@
             "appdir": "/Applications"
           }
         }
+      },
+      "figma": {
+        "version": "95.8.0",
+        "options": {
+          "full_name": "figma",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
       }
     }
   },
@@ -195,10 +204,10 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.0.9",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "c2827aa9865d5d5e5407e30bdc8fa2a5401e311d",
+        "Homebrew/homebrew-core": "5c0aea1dca7e396066cbf2bb817823233f6b4f40",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.0",
-        "macOS": "11.2.2"
+        "macOS": "11.2.3"
       }
     }
   }
