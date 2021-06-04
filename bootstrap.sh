@@ -6,6 +6,8 @@ if test ~ $(which brew); then
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> $HOME/.zshrc
+
 # Homebrew Update
 brew Update
 
