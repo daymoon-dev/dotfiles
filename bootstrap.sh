@@ -3,7 +3,7 @@ DOTFILES=$HOME/dotfiles
 
 # Homebrew 설치 확인, 설치되어 있지 않은 경우 설치 진행
 if test ~ $(which brew); then
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Homebrew Update
