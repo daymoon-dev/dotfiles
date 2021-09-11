@@ -13,5 +13,5 @@ Magnet, iA Writer, PopClip, Dropbox, KakaoTalk, Adobe XD, Pomodone App, Pocket
 ## Font
 Fira Code(ligature Font)
 
-#TODO
+## TODO
 - M1 대응
