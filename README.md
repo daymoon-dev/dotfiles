@@ -1,4 +1,4 @@
-# Mac OS dotfiles
+# MacOS dotfiles
 
 ## Binary / Library
 nvm, nodejs(LTS), mackup
@@ -12,3 +12,6 @@ Magnet, iA Writer, PopClip, Dropbox, KakaoTalk, Adobe XD, Pomodone App, Pocket
 
 ## Font
 Fira Code(ligature Font)
+
+#TODO
+- M1 대응
