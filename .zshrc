@@ -106,3 +106,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add the Homebrew bin directory to the PATH. If you don't use zsh, you'll need to do this yourself.
 export PATH=/opt/homebrew/bin:$PATH
+
+prompt_context(){}

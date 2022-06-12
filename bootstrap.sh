@@ -1,3 +1,4 @@
+
 # Set temporary variable
 DOTFILES=$HOME/dotfiles
 
@@ -6,7 +7,8 @@ if test ~ $(which brew); then
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-echo 'export PATH="/opt/homebrew/bin:$PATH"' >> $HOME/.zshrc
+# Export Homebrew Env Path
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Homebrew Update
 brew Update
@@ -43,3 +45,5 @@ source $HOME/.zshrc
 #-------------------------------------------------------------------------------
 
 source $DOTFILES/.osx
+
+yes | cp $DOTFILES/.zshrc $HOME
