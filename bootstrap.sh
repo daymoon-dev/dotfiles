@@ -28,8 +28,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc
 
 # git 설정
-git config --global user.name "icn.daymoon"
-git config --global user.email "icn.daymoon@gmail.com"
+git config --global user.name "daymoon-dev"
+git config --global user.email "daymoon.dev@raonfriends.com"
 
 # node 설치
 ### 1. nvm
