@@ -50,3 +50,5 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.ical "first day of the week" 1
 
 defaults write com.apple.dock autohide-time-modifier -float 0;killall Dock
+
+defaults write -g ApplePressAndHoldEnabled -bool false
